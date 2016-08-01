@@ -16,35 +16,35 @@
         <script src="APP/Vendors/js/jquery-3.1.0.js"></script>
         <script src="APP/Vendors/js/bootstrap.js"></script>
         <script src="APP/Script/view.js"></script>
+        <script src="APP/Script/model.js"></script>
+        <script src="APP/Script/controller.js"></script>
 
     </head>
 
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="tablist">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                </button>
 
+         <nav class="navbar navbar-inverse navbar-fixed-top nav" role="tablist">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
             </div>
             <div class="collapse navbar-collapse" id="collapse">
-            <ul class="nav navbar-nav">
-                <li role="presentation" class="active"><a href="/">Home</a></li>
-                <li role="presentation"><a href="products_c.html">PRODUCTS</a></li>
-                <li role="presentation">TRACK-ORDER</li>
-                <li role="presentation">CONTACT-US</li>
-                <li role="presentation"></li>
+              <ul class="nav navbar-nav">
+                <li role="presentation" class="active" id="click1"><a href="#home">Home</a></li>
+                <li role="presentation" id="click2" ><a href="#products">PRODUCTS</a></li>
                 <li role="presentation"><a href="cart_disp.html">CART</a></li>
+                <li role="presentation"><a href="#">CONTACT-US</a></li>
                 <li role="presentation"><a href="feedback_form.html">FEEDBACK</a></li>
-             </ul>
+              </ul>
             </div>
         </nav>
-        <div class="container">
+        <div class="container" id="home">
             <header id="top">
-                         <a href="/"></a>
+                 <a href="/"></a>
             </header>
 
              <div class="carousel slide" id="carousel-1" style="margin-top:80px;">
@@ -80,15 +80,24 @@
                 <a class="left carousel-control" href="#carousel-1" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-1" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
 
-            <div id="middle" class="container">
-                <div class="row">
-                    hello
-                </div>
+
+        </div>
+        <div id="products">
+            <div class="container" id="mid">
+            <div class="row" id="items">
+
+
+
+            </div>
             </div>
         </div>
-        <footer class="footer">
 
+        <footer class="footer">
+            <small>
+            <p style='align:center'> Posted by-Raghib Ahsan ,Mohd Faheem and Gaurav</p>
+            </small>
         </footer>
+
     </body>
 </html>
 

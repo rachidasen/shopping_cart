@@ -1,0 +1,111 @@
+.container{
+margin-top: 70px;
+
+}
+.container1{
+width:400px;
+height: 400px;
+float: right;
+margin-top:-600px;
+margin-right: 50px;
+}
+.container1.title {
+    color: #3e4152;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.price {
+    position: relative;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3e4152;
+    margin: 0 0 20px;
+    }
+  .price .discount {
+    padding-left: 5px;
+    color: #ee5f73;
+}
+.sizes {
+    height: 50px;
+    display: table;
+    position: relative;
+    margin-top: 10px;
+    padding: 40px 0 0;
+    border-top: dotted 1px #d4d5d9;
+    width: 100%;
+    }
+   .sizes .size-cont button {
+    height: 40px;
+    min-width: 40px;
+    border-radius: 30px
+}
+#S, #M, #L, #XL{
+line-height: 1.2;
+    background-color: #4CAF50;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 30px;
+    height: 30px;
+    padding: 0 7px;
+    vertical-align: top;
+    border: solid 1px #697071;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: none;
+
+}
+#S:hover, #M:hover, #L:hover, #XL:hover{
+    background-color: #008CBA;
+}
+#btn {
+    color:red;
+    line-height: 1.2;
+    background-color: #20bd99;
+    display: inline-block;
+    min-width: 30px;
+    height: 30px;
+    padding: 0 7px;
+    vertical-align: top;
+    border: solid 1px #697071;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: none;
+    }
+.wishlist {
+    display: inline-block;
+    margin: 10px 0 10px;
+    text-align: left;
+    position: relative;
+    vertical-align: middle;
+    }
+.wishlist button {
+    font-size: 12px;
+    width: 140px;
+    height: 45px;
+    border-radius: 3px;
+    border: solid 1px #20bd99;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color: #20bd99;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;}
+#blowup {
+   background-image:url("http://assets.myntassets.com/w_450,q_80/v1/assets/images/1327344/2016/7/4/11467614894952-Campus-Sutra-Black-T-shirt-2671467614894709-1.jpg") ;
+    position: relative;
+    display: inline-block;
+    height: 550px;
+    width: 420px;
+    border: solid 2px #20bd99;
+    margin-left: -60px;
+}
+#TheCart{
+    margin-top: -600px;
+    float:left;
+}
