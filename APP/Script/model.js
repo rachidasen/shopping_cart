@@ -19,9 +19,9 @@ $(document).ready(function(){
                                             <figcaption>\
                                                 <p class='caption'>\" "+data['items'][i]['name']+" \"</p>\
                                                 <p><center>Rs. "+data['items'][i]['final-price']+" /-</center></p>\
-                                                <div class='caption '> \
-                                                    <button type='button' class='btn-lg btn-info' > Add-toCart</button>\
-                                                    <button type='button' class='btn-lg btn-success' style='float:right;' value="+i+" onclick='product_details(this.value)'>Preview</button>\
+                                                <div class='caption row'> \
+                                                    <button type='button' class='btn-lg btn-info col-sm-6 col-md-6' > Add-toCart</button>\
+                                                    <button type='button' class='btn-lg btn-success col-sm-6 col-md-6' style='float:right;' value="+i+" onclick='product_details(this.value)'>Preview</button>\
                                                 </div> <figcaption>\
                                         </figure>\
                                 </div>");
