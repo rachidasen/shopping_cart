@@ -3,6 +3,7 @@ $(document).ready(function(){
     $("#click2").click(function(){
         $("#home").hide();
         $("#products").show();
+        $("#items").html('');
          $.ajax({
           dataType: "json",
           url: "APP/Script/data.json",

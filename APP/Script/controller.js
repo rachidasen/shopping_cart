@@ -11,8 +11,7 @@ function product_details(product_no) {
             var i = 0,
                 thumbSmall = data.items[product_no].thumbSmall,
                 thumbBig = data.items[product_no].thumbBig,
-                content = "<div id='products'>\
-                            <div class='container'>\
+                content = "<div class='container'>\
                               <div class='col-md-4'>\
                                 <div class='row'>\
                                   <img class='fancybox' id='one' src ={{thumb0}}  height='150' width='150'>\
@@ -27,15 +26,14 @@ function product_details(product_no) {
                                   <img class='fancybox' id='four' src ={{thumb3}}  height='150' width='150'>\
                                 </div>\
                               </div>\
-                              <div class= 'blow'>\
+                              <div class= 'blow col-md-4'>\
                                 <img  id='blowup' height='550px'  width='400px'>\
                               </div>\
-                            </div>\
-                            <div class ='container1'>\
+                            <div class ='col-md-4'>\
                               <h1  class='title'> {{title}}</h1>\
                               <div  class='price'><input  type='button' id='Prc' value={{price}} decoration:'none'></div>\
-                              <div class='sizes'><label class='guide'>Select a size</label></div>\
-                              <div class='size-cont'>\
+                              <div class='sizes row'><label class='guide'>Select a size</label></div>\
+                              <div class='size-cont row'>\
                                 <input type='button' id='S' value='S'>\
                                 <input type='button' id='M' value='M'>\
                                 <input type='button' id='L' value='L'>\
@@ -43,7 +41,7 @@ function product_details(product_no) {
                               </div><br>\
                               <button id='btn' type='button' onclick='AddToCart()' >Add to Cart</button>\
                             </div>\
-                           </div>",
+                            </div>  ",
                 templater = function (html) {
                     return function (data) {
                         for (var x in data){
