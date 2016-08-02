@@ -97,13 +97,13 @@ line-height: 1.2;
     cursor: pointer;
     text-align: center;}
 #blowup {
-   background-image:url("http://assets.myntassets.com/w_450,q_80/v1/assets/images/1327344/2016/7/4/11467614894952-Campus-Sutra-Black-T-shirt-2671467614894709-1.jpg") ;
+   //background-image:url("http://assets.myntassets.com/w_450,q_80/v1/assets/images/1327344/2016/7/4/11467614894952-Campus-Sutra-Black-T-shirt-2671467614894709-1.jpg") ;
     position: relative;
     display: inline-block;
     height: 550px;
     width: 420px;
     border: solid 2px #20bd99;
-    margin-left: -60px;
+    margin-left: -140px;
 }
 #TheCart{
     margin-top: -600px;

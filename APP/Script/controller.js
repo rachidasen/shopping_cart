@@ -13,17 +13,17 @@ function product_details(product_no) {
                 thumbBig = data.items[product_no].thumbBig,
                 content = "<div class='container'>\
                               <div class='col-md-4'>\
+                                <div class='row'><br><br>\
+                                  <img class='fancybox' id='one' src ={{thumb0}}  height='80' width='80'>\
+                                </div><br><br>\
                                 <div class='row'>\
-                                  <img class='fancybox' id='one' src ={{thumb0}}  height='150' width='150'>\
-                                </div><br>\
+                                  <img class='fancybox'  id='two' src ={{thumb1}}   height='80' width='80'>\
+                                </div><br><br>\
                                 <div class='row'>\
-                                  <img class='fancybox'  id='two' src ={{thumb1}}   height='150' width='150'>\
-                                </div><br>\
+                                  <img class='fancybox' id='three'src ={{thumb2}}  height='80' width='80'>\
+                                </div><br><br>\
                                 <div class='row'>\
-                                  <img class='fancybox' id='three'src ={{thumb2}}  height='150' width='150'>\
-                                </div><br>\
-                                <div class='row'>\
-                                  <img class='fancybox' id='four' src ={{thumb3}}  height='150' width='150'>\
+                                  <img class='fancybox' id='four' src ={{thumb3}}  height='80' width='80'>\
                                 </div>\
                               </div>\
                               <div class= 'blow col-md-4'>\
@@ -34,10 +34,10 @@ function product_details(product_no) {
                               <div  class='price'><input  type='button' id='Prc' value={{price}} decoration:'none'></div>\
                               <div class='sizes row'><label class='guide'>Select a size</label></div>\
                               <div class='size-cont row'>\
-                                <input type='button' id='S' value='S'>\
-                                <input type='button' id='M' value='M'>\
-                                <input type='button' id='L' value='L'>\
-                                <input type='button' id='XL' value='XL'>\
+                                <input type='radio' name='size' value='S'><span id='S'>S</span> \
+                                <input type='radio' name='size' value='M'><span id='M' >M</span>\
+                                <input type='radio' name='size' value='L'><span id='L' >L</span>\
+                                <input type='radio' name='size'  value='XL'><span id='XL'>XL</span>\
                               </div><br>\
                               <button id='btn' type='button' onclick='AddToCart()' >Add to Cart</button>\
                             </div>\
@@ -63,6 +63,7 @@ function product_details(product_no) {
                 title:data.items[product_no].title,
                 price:data.items[product_no]['final-price']
             });
+            $("#blowup").attr('src',thumbBig[0])
             $("#one").click(function(){
                 $("#blowup").attr('src',thumbBig[0])
             });
