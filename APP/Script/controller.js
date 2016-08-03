@@ -39,7 +39,7 @@ function product_details(product_no) {
                                 <input type='radio' name='size' value='L'><span id='L' >L</span>\
                                 <input type='radio' name='size'  value='XL'><span id='XL'>XL</span>\
                               </div><br>\
-                              <button id='btn' type='button' onclick='AddToCart()' >Add to Cart</button>\
+                              <button id='btn' type='button' onclick=AddToCart('{{thumb0}}','{{price}}',"+product_no+") >Add to Cart</button>\
                             </div>\
                             </div>  ",
                 templater = function (html) {
@@ -84,5 +84,16 @@ function product_details(product_no) {
         }
     });
     console.log(typeof (product_no));
+//    function AddToCart(im,price,t)
+//    {
+//        alert(price);
+//        alert(size);
+//    }
     //alert(product_no);
+}
+
+function AddToCart(im,price,product_no)
+{
+    alert(price);
+    alert(t);
 }
